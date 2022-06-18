@@ -1,0 +1,81 @@
+body{
+  background-color: rgb(129, 68, 184);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a{
+  color: rgb(255, 250, 250);
+  font-weight: bold;
+  font-size: 2rem;
+  background-color: rgb(245, 31, 216);
+  padding: 0rem 1.5rem;
+  text-decoration: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+header a:hover{
+  background-color: rgb(190, 48, 171);
+}
+
+main{
+  height: 90vh;
+  display: grid;
+  place-items: center;
+}
+
+section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  width: 44rem;
+  height: 32rem;
+  gap: 1rem;
+}
+
+section div {
+  text-align: center;
+}
+
+.box-1{
+  background-color: red;
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+}
+
+.box-2{
+  background-color: rgba(251, 170, 19, 0.883);
+  grid-column-start: 4;
+  grid-column-end: span 2;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+}
+
+.box-3{
+  background-color: rgba(44, 202, 57, 0.63);
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  grid-row-start: 3;
+  grid-row-end: span 2;
+}
+
+.box-4{
+  background-color: rgb(57, 186, 246);
+  grid-column-start: 3;
+  grid-column-end: span 3;
+  grid-row-start: 3;
+  grid-row-end: span 1;
+}
+
+.box-5{
+  background-color: rgb(57, 186, 246);
+  grid-column-start: 3;
+  grid-column-end: span 3;
+  grid-row-start: 4;
+  grid-row-end: span 1;
+}
